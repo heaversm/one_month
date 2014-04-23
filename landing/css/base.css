@@ -1,0 +1,57 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,p {
+    font-weight: normal;
+    margin: 0; padding: 0;
+}
+
+body {
+    font-family: Arial,sans-serif;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+@font-face {
+    font-family: 'mark_proheavy';
+    src: url('../fonts/markpro/fontfont_ff.mark.pro.heavy-webfont.eot');
+    src: url('../fonts/markpro/fontfont_ff.mark.pro.heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/markpro/fontfont_ff.mark.pro.heavy-webfont.woff') format('woff'),
+         url('../fonts/markpro/fontfont_ff.mark.pro.heavy-webfont.ttf') format('truetype'),
+         url('../fonts/markpro/fontfont_ff.mark.pro.heavy-webfont.svg#mark_proheavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'mark_probold';
+    src: url('../fonts/markpro/markpro-bold-webfont.eot');
+    src: url('../fonts/markpro/markpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/markpro/markpro-bold-webfont.woff') format('woff'),
+         url('../fonts/markpro/markpro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/markpro/markpro-bold-webfont.svg#mark_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

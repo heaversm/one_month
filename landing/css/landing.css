@@ -1,0 +1,165 @@
+#container {
+    width: 974px;
+    margin: 0 auto;
+}
+
+#landing-header {
+    height: 480px;
+    width: 100%;
+    background: url('../img/man-w-balloon.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+    border-top: 4px solid #F5DA5C;
+}
+
+.site-logo {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    width: 208px;
+    height: 31px;
+    background: url('../img/onemonth-logo-white.svg') no-repeat 50% 50%;
+    text-indent: -1000px;
+    left: 25px;
+    top: 25px;
+}
+
+.sign-in {
+    color: white;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    font-size: .75em;
+}
+
+.site-tagline {
+    color: white;
+    display: block;
+    width: 80%;
+    text-align: center;
+    font-family: 'mark_proheavy', Arial, sans-serif;
+    font-size: 3.125em;
+    margin: 150px auto 0 auto;
+    line-height: 1.2em;
+}
+
+.site-tagline strong {
+    color: #F5DA5C;
+}
+
+.course {
+    width: 33.3333%;
+    float: left;
+    height: 220px;
+    background-size: cover;
+    padding: 10px;
+    position: relative;
+}
+
+#course-rails {
+    background: url('../img/tout-nopants.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#course-html {
+    background: url('../img/tout-firework.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#course-growth {
+    background: url('../img/tout-skater.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.course-logo {
+    background-color: white;
+    display: inline-block;
+    font-family: 'mark_proheavy', Arial, sans-serif;
+    color: #4D4D4D;
+    text-indent: 30px;
+    line-height: 1.6em;
+    white-space: nowrap;
+}
+
+.course-type {
+    font-family: 'mark_probold', Arial, sans-serif;
+}
+
+#course-rails .course-logo {
+    background: url('../img/icon-rails.svg') no-repeat 7px 50% white;
+}
+
+#course-html .course-logo {
+    background: url('../img/icon-html.svg') no-repeat 7px 50% white;
+}
+
+#course-growth .course-logo {
+    background: url('../img/icon-growth.svg') no-repeat 7px 50% white;
+}
+
+.course-type {
+    display: inline-block;
+    text-indent: 0;
+    padding: 0px 5px;
+    color: white;
+}
+
+#course-rails .course-type {
+    background-color: #F06745;
+}
+
+#course-html .course-type {
+    background-color: #129C8E;
+}
+
+#course-growth .course-type {
+    background-color: #78C8ED;
+}
+
+.course-description {
+    font-size: 1em;
+    color: white;
+    margin-top: 25px;
+    line-height: 1.4em;
+    width: 80%;
+}
+
+.course-btn {
+    background: #F8DA4A;
+    border-radius: 7px;
+    color: #4D4D4D;
+    font-size: .5em;
+    padding: 10px 15px;
+    position: absolute;
+    display: inline-block;
+    bottom: 30px;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    letter-spacing: .03em;
+}
+
+.course-btn:hover {
+    background: #edc60d;
+}
+
+@media all and (max-width: 560px) {
+
+    .site-tagline {
+        font-size: 2em;
+    }
+
+    #container {
+        max-width: 480px;
+        width: 100%;
+    }
+
+    .course {
+        width: 100%;
+        float: none;
+    }
+
+    .course-description {
+        width: 80%;
+    }
+
+}
