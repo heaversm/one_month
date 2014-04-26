@@ -37,8 +37,6 @@
     display: block;
     width: 80%;
     text-align: center;
-    font-family: 'mark_proheavy', Arial, sans-serif;
-    /*font-family: MarkWebPro-Black, Arial, sans-serif;*/
     font-size: 3.125em;
     margin: 150px auto 0 auto;
     line-height: 1.2em;
@@ -49,7 +47,7 @@
 }
 
 .course {
-    width: 33.3333%;
+    width: 33.33333333%;
     float: left;
     height: 220px;
     background-size: cover;
@@ -73,34 +71,38 @@
 }
 
 .course-logo {
-    background-color: white;
+    position: relative;
+}
+
+.course-brand, .course-type {
+    height: 26px;
     display: inline-block;
-    /*font-family: 'mark_proheavy', Arial, sans-serif;*/
-    font-family: MarkWebPro-Black, Arial, sans-serif;
+    vertical-align: middle;
+    float: left;
+    line-height: 1.6em;
+}
+
+.course-brand {
+
     color: #4D4D4D;
-    text-indent: 30px;
-    white-space: nowrap;
+    text-indent: 26px;
+    background-color: white;
+    padding-right: 4px;
+}
+
+#course-rails .course-brand {
+    background: url('../img/icon-rails.svg') no-repeat 3px 50% white;
+}
+
+#course-html .course-brand {
+    background: url('../img/icon-html.svg') no-repeat 5px 50% white;
+}
+
+#course-growth .course-brand {
+    background: url('../img/icon-growth.svg') no-repeat 5px 50% white;
 }
 
 .course-type {
-    font-family: 'mark_probold', Arial, sans-serif;
-}
-
-#course-rails .course-logo {
-    background: url('../img/icon-rails.svg') no-repeat 7px 50% white;
-}
-
-#course-html .course-logo {
-    background: url('../img/icon-html.svg') no-repeat 7px 50% white;
-}
-
-#course-growth .course-logo {
-    background: url('../img/icon-growth.svg') no-repeat 7px 50% white;
-}
-
-.course-type {
-    display: inline-block;
-    text-indent: 0;
     padding: 0px 5px;
     color: white;
 }
@@ -121,7 +123,6 @@
     font-size: 1em;
     color: white;
     margin-top: 25px;
-    line-height: 1.4em;
     width: 80%;
 }
 
@@ -171,10 +172,6 @@
         font-size: .9em;
     }
 
-    .course-logo {
-        padding-right: 5px;
-    }
-
     .course-btn {
         bottom: 20px;
     }
@@ -183,10 +180,13 @@
         width: 100%;
     }
 
-    .course-type {
+    .course-brand,.course-type {
+        float: none;
+    }
+
+    .course-brand {
         display: block;
-        position: absolute;
-        top: 29px;
+        width: 130px;
     }
 
 }
