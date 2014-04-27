@@ -20,4 +20,4 @@ jQuery has been included for convenience here, though you may consider removing 
 
 ### RESPONSIVENESS
 
-The site utilizes two breakpoints. It has a max width of 974px, which you may consider revising to a more standard 960 if you implement the bootstrap grid (you can do this easily by just changing the width of #container in the landing.css file). The breakpoints currently occur between 560 and 960 for tablet, and less than 560 for mobile. These can easily be adjusted in landing.css as well, though keeping in roughly the same range is recommended.
+The site utilizes two breakpoints. It has a max width of 1600px, which can be easily adjusted by adjusting the `max-width` in the `landing.css` file. The breakpoints currently occur between 560 and 960 for tablet, and less than 560 for mobile. These can easily be adjusted in landing.css as well, though keeping in roughly the same range is recommended.
