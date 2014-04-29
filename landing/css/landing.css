@@ -1,13 +1,12 @@
 #container {
     width: 100%;
-    max-width: 1600px;
     margin: 0 auto;
 }
 
 #landing-header {
     height: 480px;
     width: 100%;
-    background: url('../img/man-w-balloon.jpg') no-repeat 50% 50%;
+    background: url('../img/man-w-balloon.jpg') no-repeat 50% 5%;
     background-size: cover;
     position: relative;
     border-top: 4px solid #F5DA5C;
@@ -73,51 +72,22 @@
 
 .course-logo {
     position: relative;
-}
-
-.course-brand, .course-type {
+    overflow: hidden;
+    text-indent: -10000px;
     height: 26px;
-    display: inline-block;
-    vertical-align: middle;
-    float: left;
-    line-height: 1.6em;
+    max-width: 100%;
 }
 
-.course-brand {
-
-    color: #4D4D4D;
-    text-indent: 26px;
-    background-color: white;
-    padding-right: 4px;
+#course-rails .course-logo {
+    background: url('../img/logo-rails.svg') no-repeat 0% 0%;
 }
 
-#course-rails .course-brand {
-    background: url('../img/icon-rails.svg') no-repeat 3px 50% white;
+#course-html .course-logo {
+    background: url('../img/logo-html.svg') no-repeat 0% 0%;
 }
 
-#course-html .course-brand {
-    background: url('../img/icon-html.svg') no-repeat 5px 50% white;
-}
-
-#course-growth .course-brand {
-    background: url('../img/icon-growth.svg') no-repeat 5px 50% white;
-}
-
-.course-type {
-    padding: 0px 5px;
-    color: white;
-}
-
-#course-rails .course-type {
-    background-color: #F06745;
-}
-
-#course-html .course-type {
-    background-color: #129C8E;
-}
-
-#course-growth .course-type {
-    background-color: #78C8ED;
+#course-growth .course-logo {
+    background: url('../img/logo-growth.svg') no-repeat 0% 0%;
 }
 
 .course-description {
@@ -161,7 +131,7 @@
     text-decoration: underline;
 }
 
-@media all and (max-width: 971px) and (min-width: 560px) {
+@media all and (max-width: 971px) and (min-width: 720px) {
 
     .site-tagline {
         font-size: 2em;
@@ -181,26 +151,14 @@
         width: 100%;
     }
 
-    .course-brand,.course-type {
-        float: none;
-    }
-
-    .course-brand {
-        display: block;
-        width: 130px;
-    }
 
 }
 
 
-@media all and (max-width: 560px) {
+@media all and (max-width: 719px) {
 
     #container {
         width: 100%;
-    }
-
-    .course-description {
-        width: 80%;
     }
 
     .site-tagline {
@@ -217,4 +175,11 @@
         top: 15px;
     }
 
+}
+
+@media all and (min-width: 1200px) {
+    #landing-header {
+        background: url('../img/man-w-balloon-lg.jpg') no-repeat 50% 5%;
+        background-size: cover;
+    }
 }
