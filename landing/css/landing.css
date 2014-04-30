@@ -182,4 +182,20 @@
         background: url('../img/man-w-balloon-lg.jpg') no-repeat 50% 5%;
         background-size: cover;
     }
+
+    #course-rails {
+        background: url('../img/tout-nopants-lg.jpg') no-repeat 50% 50%;
+        background-size: cover;
+    }
+
+    #course-html {
+        background: url('../img/tout-firework-lg.jpg') no-repeat 50% 50%;
+        background-size: cover;
+    }
+
+    #course-growth {
+        background: url('../img/tout-skater-lg.jpg') no-repeat 50% 50%;
+        background-size: cover;
+    }
+
 }
